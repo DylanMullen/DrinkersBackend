@@ -43,7 +43,7 @@ func main() {
 
 		waterfallRoute.GET("/ws/:gameID", handleWebsocket)
 	}
-	http.ListenAndServe("192.168.0.16:5000", router)
+	http.ListenAndServe(":5000", router)
 	router.Run()
 
 }

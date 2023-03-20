@@ -39,7 +39,6 @@ func handleJoin(game *HigherLower, request models.Request) {
 	var req models.JoinReq
 	jsonData, _ := json.Marshal(request.Content)
 	json.Unmarshal(jsonData, &req)
-
 	game.AddPlayer(req.Player)
 }
 

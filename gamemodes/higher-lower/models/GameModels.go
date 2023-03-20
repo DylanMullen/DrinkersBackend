@@ -45,17 +45,5 @@ type Players struct {
 
 type HigherLowerPlayer struct {
 	models.User
+	Owner string `json:"owner,omitempty"`
 }
-
-// type CardStyle struct {
-// 	Card CardTheme `json:"card"`
-// 	Pip  PipTheme  `json:"pip"`
-// }
-
-// type CardTheme struct {
-// 	BG string `json:"cardBackground"`
-// 	Border string `json:""`
-// }
-
-// type PipTheme struct {
-// }
